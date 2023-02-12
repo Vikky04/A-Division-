@@ -1,32 +1,25 @@
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#include<iostream>
+using namespace std;
+void solve(){
+    
+    int rating;
+    cin>>rating;
+    if(rating>=1900)
+    cout<<"Division 1"<<endl;
+    if(rating>=1600 && rating <=1899)
+    cout<<"Division 2"<<endl;
+    if(rating>=1400 && rating<=1599)
+    cout<<"Division 3"<<endl;
+    if(rating<=1399)
+    cout<<"Division 4"<<endl;
+}
+int main(){
+    
+         int test;
+         cin>>test;
+         while(test--)
+         solve();
+    
+    return 0;
+}
